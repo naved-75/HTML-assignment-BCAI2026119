@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Fit Products</title>
+
+    <style>
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 8px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="product1.jpg">
+            <h3>Product 1</h3>
+            <p>Price: ₹500</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="product2.jpg">
+            <h3>Product 2</h3>
+            <p>Price: ₹700</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="product3.jpg">
+            <h3>Product 3</h3>
+            <p>Price: ₹900</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
