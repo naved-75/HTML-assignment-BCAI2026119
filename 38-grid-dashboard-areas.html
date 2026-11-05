@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Dashboard Areas</title>
+
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            grid-template-columns: 200px 1fr;
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+        </div>
+
+        <div class="main">
+            <h2>Main Content</h2>
+            <p>Welcome to Dashboard</p>
+        </div>
+
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>
