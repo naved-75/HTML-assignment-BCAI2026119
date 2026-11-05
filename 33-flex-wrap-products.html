@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Wrap Products</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            width: 180px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px gray;
+        }
+
+        .product h3 {
+            color: blue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="container">
+
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Price: ₹500</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>Price: ₹700</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>Price: ₹900</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 4</h3>
+            <p>Price: ₹400</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
